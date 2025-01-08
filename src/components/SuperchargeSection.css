@@ -1,0 +1,92 @@
+/* Container box */
+.supercharge-box {
+    width: 989.5px;
+    height: 578.5px;
+    background-color: #0b1a33;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* For positioning the AI bot */
+    margin: 50px auto; /* Center align the box horizontally */
+    overflow: hidden;
+}
+
+/* Heading */
+.supercharge-heading {
+    font-family: Inter, sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1; /* Corrected line-height */
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: #fff;
+    margin: 0.1px;
+    margin-bottom: 60px;
+}
+
+/* Button */
+.supercharge-btn {
+    width: 150.5px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #0a64fe;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.supercharge-btn:hover {
+    background-color: #094bbf; /* Slightly darker on hover */
+}
+
+.btn-text {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.23px;
+    color: #fff;
+}
+
+/* AI Bot Image */
+.ai-bot {
+    position: absolute;
+    margin-top: 520px;
+    width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    overflow: hidden;
+}
+
+/* Media Query for Mobile View (screens below 768px) */
+@media only screen and (max-width: 768px) {
+    .supercharge-box {
+        width: 90%; /* Reduce the width for mobile */
+        height: 200px; /* Allow height to adjust automatically */
+        padding: 20px; /* Add some padding for spacing */
+    }
+
+    .supercharge-heading {
+        font-size: 26px; /* Reduce the font size for smaller screens */
+        margin-bottom: 20px; /* Reduce margin-bottom for better spacing */
+    }
+
+    .supercharge-btn {
+        width: 120px; /* Make the button smaller */
+        height: 30px; /* Reduce button height */
+        margin-top: 5px; /* Adjust the margin for the button */
+    }
+
+    .btn-text {
+        font-size: 7px; /* Reduce text size in the button */
+    }
+
+    .ai-bot {
+        width: 110px; /* Reduce the AI bot image size */
+        margin-top: 210px;
+    }
+}

@@ -1,0 +1,83 @@
+.train-clone-section {
+    left: 102.5px;
+    top: 1018px;
+    width: 75%;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    color: #041d34; 
+}
+
+.train-clone-section .main-text1 {
+  font-size: 50px; /* Set font size for main text */
+  font-weight: 600; /* Bold weight for emphasis */
+  margin-bottom: 10px; /* Space below main text */
+  display: block; /* Ensure main-text spans the full width */
+}
+
+.train-clone-section .sub-text {
+  font-size: 14px; /* Set smaller font size for subtext */
+  font-weight: 500; /* Medium weight */
+  color: #515e71; /* Subtext color */
+  line-height: 1.5; /* Line spacing for better readability */
+  margin-bottom: 10px; /* Space between subtext lines */
+  display: block; /* Ensure sub-text spans the full width */
+}
+
+.train-clone-section .button-container {
+  margin-top: 20px; /* Space above button */
+}
+
+.train-clone-section .button-text {
+  width: 150px; /* Set button width */
+  height: 40px; /* Set button height */
+  background-color: #0a64fe; /* Button background color */
+  color: #fff; /* Button text color */
+  font-size: 14px; /* Button text size */
+  font-weight: 600; /* Bold text for button */
+  text-align: center; /* Center align text in button */
+  border-radius: 20px; /* Rounded corners */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.train-clone-section .button-text:hover {
+  background-color: #064ab5; /* Darker blue on hover */
+}
+@media screen and (max-width: 768px) {
+  .train-clone-section {
+    position: relative; /* Adjust position for mobile view */
+    left: 0;
+    top: auto; /* Remove absolute positioning */
+    width: 100%; /* Make the section full width */
+    padding: 20px; /* Add some padding for mobile */
+    text-align: center; /* Center align text for better readability */
+  }
+
+  .train-clone-section .main-text {
+    font-size: 24px; /* Adjust font size for mobile */
+    margin-bottom: 10px;
+  }
+
+  .train-clone-section .sub-text {
+    font-size: 12px; /* Adjust sub-text font size for mobile */
+    line-height: 1.4;
+    margin-bottom: 5px; /* Reduce space between sub-text lines */
+  }
+
+  .train-clone-section .button-container {
+    margin-top: 20px; /* Space above button */
+  }
+
+  .train-clone-section .button-text {
+    width: 60%; /* Set button width as percentage of parent container */
+    max-width: 250px; /* Ensure the button doesn't exceed a max width */
+    height: auto; /* Let the button height adjust according to width */
+    padding: 10px; /* Adjust padding for better spacing */
+    font-size: 16px; /* Adjust button text size */
+    border-radius: 20px; /* Keep rounded corners */
+  }
+
+  .train-clone-section .button-text:hover {
+    background-color: #064ab5; /* Darker blue on hover */
+  }
+}

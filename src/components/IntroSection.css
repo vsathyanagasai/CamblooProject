@@ -1,0 +1,129 @@
+/* Intro Section */
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 10px; /* 10px gap between each line */
+    margin-top: 134px; /* Position the container 134px from the top */
+     /* Ensure the container takes the remaining space */
+  }
+  
+  /* Main Text for Intro */
+  .main-text {
+    display: block; 
+    width: 100%; 
+    /* max-width: 486.5px;  */
+    height: 48.5px; 
+    font-family: 'Inter', sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    color: #041d34;
+    margin-top: 38.5px; 
+    text-align: center; 
+  }
+  
+  /* Sub Text for Intro */
+  .sub-text-intro {
+    margin-top: 50px ;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    color: #515e71;
+    text-align: center;
+    margin-bottom: 10px; /* 10px gap between lines */
+  }
+  
+  /* Get Started Button */
+  .button-container-intro {
+    margin-top: 20px;
+  }
+  
+  .get-started-btn {
+    width: 132px;
+    height: 43px;
+    background-color: #0a64fe;
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 7.5px;
+    font-weight: 500;
+    letter-spacing: 0.23px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #064ab5; /* Darker blue on hover */
+  }
+  
+/* GIF Container */
+.gif-container-intro {
+  display: flex; /* Center the GIF within the container */
+  align-items: center;
+  justify-content: center;
+  width: 787.5px;
+    height: 451px; /* Set the container height */
+  margin: 20px auto; /* Center the container */
+  border-radius: 11.5px; /* Apply rounded corners */
+  -webkit-backdrop-filter: blur(12.8px); /* Apply blur effect for Webkit browsers */
+  backdrop-filter: blur(12.8px); /* Apply blur effect */
+  box-shadow: 0 0 31px 6.5px rgba(10, 100, 254, 0.15); /* Apply shadow effect */
+     overflow: hidden;/* Positioning for child elements */
+}
+
+/* Adjust the GIF */
+.gif-container-intro img {
+  width: 100%; /* Make GIF fill the container's width */
+  height: 100%; /* Make GIF fill the container's height */
+  object-fit: cover; /* Ensures the GIF fits the container while respecting aspect ratio */
+}
+
+  
+  
+  /* Mobile-specific styles */
+@media (max-width: 768px) {
+  .intro-section {
+    margin-top: 50px; /* Adjust margin for smaller screens */
+    height: auto; /* Let the height be dynamic */
+    padding: 20px; /* Add some padding */
+  }
+
+  /* Main Text */
+  .main-text {
+    font-size: 35px; /* Adjust font size for smaller screens */
+    height: auto; /* Let text size adjust automatically */
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  /* Sub Text */
+  .sub-text-intro {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    margin-top: 20px; /* Adjust spacing */
+    margin-bottom: 5px; /* Reduce bottom margin */
+  }
+
+  /* Button */
+  .get-started-btn {
+    width: 120px; /* Adjust button width */
+    height: 35px; /* Adjust button height */
+    font-size: 12px; /* Adjust font size */
+  }
+
+  /* GIF Container */
+  .gif-container-intro {
+    width: 80%; /* Make the GIF container responsive */
+    height: auto; /* Let height adjust accordingly */
+    margin: 10px auto; /* Add margin to space out */
+  }
+
+  .gif-container-intro img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Let height adjust to aspect ratio */
+  }
+}

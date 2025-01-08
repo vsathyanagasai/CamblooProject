@@ -1,0 +1,208 @@
+/* Outer Rectangle (Container) */
+.navbar-container {
+    position: sticky; /* Makes the navbar stick to the top during scrolling */
+    top: 0; /* Defines how far from the top the sticky navbar should stay */
+    z-index: 1000; /* Ensures the navbar appears above other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    padding: 10px 0;
+    margin: 21px auto;
+    background-color: #ffffff; /* Same as background */
+  }
+  
+  /* Navbar (Inner Section) */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f4f9f2;
+    height: 65px; /* Height of the actual navbar */
+    width: 70%; /* Width of the actual navbar */
+    border-radius: 32.5px; /* Rounded corners only for the navbar */
+    padding: 0 20px;
+  }
+  
+  /* Left Section Styles */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    width: 34px;
+    height: 18.2px;
+    flex-grow: 0;
+    
+  }
+  
+  .company-name {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    color: #000000;
+    letter-spacing: -0.03em;
+  }
+  
+  /* Middle Section Styles */
+  .navbar-middle {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-link {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: #000000;
+    letter-spacing: -0.02em;
+    cursor: pointer;
+  }
+  
+  /* Right Section Styles */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .login {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  .join-waitlist {
+    background-color: #0a64fe;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 23px;
+    border: none;
+    border-radius: 30px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .login1 {
+    background-color: white;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 23px;
+    border: 1px solid black;
+    border-radius: 30px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .join-waitlist:hover {
+    background-color: #084bc6;
+  }
+  /* General Navbar Styles (Desktop) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hide Mobile-Specific Elements by Default */
+.hamburger,
+.mobile-menu {
+  display: none;
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+  /* Show Hamburger Icon on Mobile */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+  }
+
+  /* Hide Desktop Elements on Mobile */
+  .navbar-middle,
+  .company-name,
+  .login {
+    display: none;
+  }
+
+  /* Show Mobile Menu Only When Open */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .mobile-menu .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    padding: 10px 0; /* Adjust spacing between nav-links */
+    margin-bottom: 10px; /* Add gap between each nav-link */
+    padding-left: 20px;  /* Move nav-links a bit to the right */
+     
+  }
+  .mobile-menu .nav-links-container {
+    flex-grow: 1;  /* Take remaining space and push buttons to bottom */
+    display: flex;
+    flex-direction: column; /* Arrange nav-links in a column */
+    width: 100%; /* Make nav links container take full width */
+    margin-top: 75px;  /* Add margin-top to move nav-links down */
+  }
+
+  .mobile-menu .login1,
+.mobile-menu .join-waitlist {
+  
+  padding: 12px 24px;
+  font-size: 16px;
+  width: 100%; /* Make buttons stretch full width */
+  margin-top: 10px; /* Add some space between the buttons */
+}
+}
+
+
+/* Cancel Icon */
+.cancel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  z-index: 1010;
+}
+
+.mobile-menu img{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1010;
+}

@@ -1,0 +1,146 @@
+/* Parent Section */
+.parent-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Common Styles */
+.img-container {
+  width: 789.5px;
+  height: 470px;
+  border-radius: 12.5px;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.info-box {
+  width: 375px;
+  padding: 123.5px 18.5px 24.5px 17.5px;
+  border-radius: 12.5px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25);
+  border: solid 0.5px #e1e4e5;
+  background-color: #f6f6f6;
+  text-align: center;
+  /* margin-left: 20px; */
+}
+
+.title {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 500;
+  color: #041d34;
+  margin-bottom: 10px;
+}
+
+.description {
+  display: block;
+  font-family: Inter;
+  font-size: 15px;
+  color: #515e71;
+  margin-bottom: 5px;
+}
+
+.cta {
+  display: block;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  color: #041d34;
+  margin-top: 10px;
+}
+
+/* First Section */
+.first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap:20px;
+}
+
+.first-section .img-container {
+  left: 130px;
+}
+
+.first-section .info-box {
+  left: 945px;
+}
+
+/* Second Section */
+.second-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* Reduced space between first and second sections */
+  flex-direction: row;
+  width: 100%;
+  gap:20px;
+}
+
+.second-section .img-container {
+  left: 565px;
+}
+
+.second-section .info-box {
+  left: 130px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  /* First Section - Adjustments for mobile */
+  .first-section {
+      flex-direction: column; /* Stack vertically */
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      width: 100%;
+  }
+
+  .info-blank{
+
+  display: none;
+  }
+  .first-section .img-container {
+      width: 80%; /* Adjust image container width */
+      height: auto;
+      margin-bottom: 10px; /* Add space between image and info box */
+  }
+
+  .first-section .info-box {
+      width: 80%;
+      padding: 20px;
+      box-shadow: none;
+      text-align: center;
+      margin-top: 20px; /* Space between info box and image */
+  }
+
+  /* Second Section - Adjustments for mobile */
+  .second-section {
+      flex-direction: column-reverse; /* Stack vertically */
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px; /* Reduced space between sections */
+      width: 100%;
+  }
+
+  .second-section .img-container {
+      width: 80%; /* Adjust image container width */
+      height: auto;
+      margin-top: 30px;
+  }
+
+  .second-section .info-box {
+      width: 80%;
+      padding: 20px;
+      box-shadow: none;
+      margin-top: 20px; /* Space between info box and image */
+      text-align: center;
+  }
+}

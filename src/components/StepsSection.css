@@ -1,0 +1,153 @@
+/* Container for the entire section */
+.steps-section {
+    background-color: #edeef0;
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Section Title */
+  .steps-title {
+    font-family: Inter, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #041d34;
+    margin-bottom: 32px;
+  }
+  
+  /* Steps container */
+  .steps-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-bottom: 40px;
+    padding-left: 20px; /* Move steps slightly to the left */
+  }
+  
+  /* Individual step card */
+  .step-card {
+    background-color: #fff;
+    border-radius: 27px;
+    width: 300px; /* Increased width */
+    height: 400px; /* Increased height */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Move first step slightly to the left */
+  .step-card-1 {
+    margin-left: 115px;
+  }
+  
+  /* Step number */
+  .step-number {
+    font-family: Inter, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: #444744;
+    margin-bottom: 12px;
+    display: block;
+  }
+  
+  /* Step title */
+  .step-title {
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #041d34;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  /* Step description */
+  .step-desc {
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    color: #041d34;
+    margin: 2px 0;
+    line-height: 1.2;
+  }
+  
+  /* Join Waitlist Button */
+  .join-button {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0 0 560px; /* Adjust the left margin */
+    padding: 5px;
+    border-radius: 25px;
+    background-color: #0a64fe;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .join-button:hover {
+    background-color: #094bbf;
+  }
+  @media (max-width: 768px) {
+    /* Container */
+    .steps-section {
+      padding: 20px; /* Reduce padding */
+    }
+  
+    /* Section Title */
+    .steps-title {
+      font-size: 30px; /* Adjust font size */
+      margin-bottom: 20px; /* Adjust space below the title */
+    }
+  
+    /* Steps container */
+    .steps-container {
+      flex-direction: column; /* Stack the steps vertically */
+      align-items: center; /* Center the steps */
+      gap: 20px; /* Increase gap between steps */
+      padding-left: 0; /* Remove padding */
+    }
+  
+    /* Individual step card */
+    .step-card {
+      width: 90%; /* Make the cards responsive */
+      height: auto; /* Let the height adjust based on content */
+      padding: 15px; /* Adjust padding */
+      text-align: center; /* Center the text */
+    }
+  
+    /* Remove the extra left margin from the first step */
+    .step-card-1 {
+      margin-left: 0;
+    }
+  
+    /* Step number */
+    .step-number {
+      font-size: 40px; /* Adjust font size */
+      margin-bottom: 10px;
+    }
+  
+    /* Step title */
+    .step-title {
+      font-size: 22px; /* Adjust font size */
+      margin-bottom: 8px;
+    }
+  
+    /* Step description */
+    .step-desc {
+      font-size: 14px; /* Adjust font size */
+      margin: 5px 0; /* Adjust margin */
+    }
+  
+    /* Join Waitlist Button */
+    .join-button {
+      margin: 20px auto; /* Center the button */
+      padding: 10px 20px; /* Adjust button size */
+      width: auto; /* Let the width adjust automatically */
+      font-size: 16px; /* Increase font size */
+    }
+  }
+  
